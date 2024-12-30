@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monsite</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="images/logo.jpg" alt="logo">
+                <h2>Monsite</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="A propos.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contactez-nous</a></li>
+            </ul>
+            <button class="login-btn">SE CONNECTER</button>
+        </nav>
+    </header>
+    
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Bienvenue !</h2>
+                <p>Veuillez vous connecter en utilisant vos informations personnelles pour rester connecté avec nous.</p>
+            </div>
+            <div class="form-content">
+                <h2>SE CONNECTER</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Mot de passe</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Mot de passe oublié?</a>
+                    <button type="submit">Se connecter</button>
+                </form>
+                <div class="bottom-link">
+                    Vous n'avez pas de compte?
+                    <a href="#" id="signup-link">Inscrivez-vous</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Créer un compte</h2>
+                <p>Pour faire partie de notre communauté, veuillez vous inscrire en utilisant vos informations personnelles.</p>
+            </div>
+            <div class="form-content">
+                <h2>S'INSCRIRE</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Entrez votre email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Créer un mot de passe</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            J'accepte les 
+                            <a href="#" class="option">conditions générales</a>
+                        </label>
+                    </div>
+                    <button type="submit">S'inscrire</button>
+                </form>
+                <div class="bottom-link">
+                    Vous avez déjà un compte ? 
+                    <a href="#" id="login-link">Se connecter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
